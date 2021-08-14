@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', san-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: #ccc;
+  overflow: hidden;
+}
+
+/* Card One */
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  background: url("blank.jpg");
+  border-top-left-radius:  15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius:  15px;
+  border-bottom-right-radius: 15px;
+  background-size: cover;
+  
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-footer {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+  margin-top: 20px;
+}
+.card-footer.footer-icons {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-footer .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+.card-footer .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-footer .value sup{
+  font-size:12px;
+}
+.card-footer .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.btn {
+    width: 70%;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: #851111;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.card-image.card2 {
+  background: url("blank.jpg");
+  background-size: cover;
+}
+.card-text.card2 .date {
+  color: rgb(255, 77, 7);
+}
+
+.container {
+    width: justify;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: none;
+    
+}
+
+.app-header .logo {
+    width: 170px;
+    margin-bottom: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid .item {
+    display: flex;
+    flex-direction: column;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.grid .item h4 {
+    margin-bottom: 5px;
+}
+
+.grid .item p {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid .item img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.card-footer.card2 .border {
+  border-left: 1px solid ;
+  border-right: 1px solid ;
+}
+.card-footer.card2 {
+  background: #a31515;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    align-self: flex-end;
+}
+
+.footer-icons i {
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* card three */
+.card-image.card3 {
+  background: url("blank.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-image.card3 i {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color {
+    align-items: start;
+}
+
+.c1 {
+    color: orange;
+}
+
+.c2 {
+    color: red;
+}
+
+.c3 {
+    color: teal;
+}
+
+.heart1 {
+    color: red;
+}
+
+
+
